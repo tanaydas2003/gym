@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+       .container{
+        border: 2px solid black;
+        height: 344px;
+        width: 100%;
+        /* initialze the container as a flex */
+        display: flex;
+        flex-direction: row; 
+        /*flex properties for container */
+        /*flex-direction: row; /* it is by default row it means the box will drop along the row */
+        /*flex-direction: column; the box will drop down along the column 
+        flex-direction: row-reverse; it will reverse means the element will drop from reverse 
+        flex-direction: column-reverse */
+        /* flex-wrap: wrap; /*it will wrap the elements after changing the resolution */
+        /* flex-flow: row-reverse wrap; for both flex direction and wrap */
+        /*justify-content: center;      
+        justify-content: space-between; /* equal space between all the elements but not from start to end */
+        /*justify-content: space-evenly; /* space equal between all the elemens from starting to end*/
+        /*align-items: center; /* it will align the elements vertically center */
+        /*align-items: flex-end; /*all the iems will come to the bottom */
+        /*align-items: flex-start; */
+        }
+       .item{
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 3px;
+       }
+       /* flex properties for flex item */
+       #item-1{
+        /*order: 25; /*order is is usedto give order so that whose order is greatest it will go
+        the last position */
+        flex-grow: 2;
+        flex-shrink: 1;
+       }
+       #item-3{
+        order: 35;
+        flex: 2 2 133px;/*   flex short is order grow basis */
+       }
+       #item-2{
+        flex-grow: 3;
+        flex-basis: 120px;
+        /* when flex direction is set to row it will control the measurements of width */
+        /* when flex direction is set to column it will control the measurements of height */
+       }
+    </style>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+</body>
+</html>

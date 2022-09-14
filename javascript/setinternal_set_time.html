@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascipt Set Time Out And Clear Timeout</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log('This is tutorial 58');
+        function greet(name,byeText){
+            console.log('Hello Goodmorning' + name + " " + byeText);
+        }
+        greet();
+        /*setTimeout(greet,5000,'Tanay','TakeCare'); // Its results comesout in console after 5 sec it will show goodmorning
+        // Make sure tjat you cannot make call the function inisde the settimeout
+        timeOut=setTimeout(greet, 5000, "Tanay", "Take Care");
+        console.log(timeOut);
+        clearTimeout(timeOut);*/
+        /*intervalId=setInterval(greet,1000,'Tanay','Goodnight');
+        clearInterval(intervalId);// This willnot show the above function*/
+        // It is used to give time in website
+        function displayTime(){
+            time= new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML= time;
+        }
+        setInterval(displayTime,1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Css Selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+        }
+        /*div p{
+            color: yellow;
+            font-weight: bold;
+            background-color: green; 
+        }*/
+        /*div  li p{
+            color: yellow;
+            font-weight: bold;
+            background-color: green; 
+        }*/
+        /*div > p{
+            color:yellow; /* yeh tabhi lagta hai jab div ke direct andar p taht is div>p */ 
+            /*background-color: green; /* that is p should be direct child of div then only this
+             slector will work */
+            /*font-weight: bold;
+        } */
+        div + p{
+            color: yellow; /*U this means p shoulkd be sibbling of div then only this selctor will 
+            work */
+            background-color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph</p></li>
+                <li>This will not get affected</li>
+                <p>this is another paragraph</p>
+            </ul>
+            <p>This is first paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragaph</p>
+</body>
+</html>

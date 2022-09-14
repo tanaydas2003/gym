@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops In Javascript</title>
+</head>
+<body>
+    <div class="container">
+        This is about loops
+    </div>
+    <script>
+        console.log('this is about loops');
+        let i=0;
+        for(i=0;i<3;i++){
+           console.log(i);
+        }
+        //let friends=['Tanay','Devansh','Sanchit','Saksham','Mridul'];
+        //for(let i=0;i<friends.length;i++){
+            //console.log('Hello '+ friends[i]);
+        //}
+        /*let fruit=['Apple','Mango','Orange','Grapes','Banana'];
+        /*fruit.forEach(function f(element){
+            console.log("My favourite food is "+ fruit +'Thank You')
+
+        });*/
+        /*for (element of fruit) {
+            console.log('Hello friend ' + fruit + ' is my favourite fruit');
+        }*/
+        let employee={
+            name:'Tanay',
+            salary: 2,
+            channel:'CWH'
+        }
+        // Use this loop to iterate the objects in loop
+        /*for(code in employee){
+            console.log(`The ${code} of the employee is ${employee[code]}`);
+        }*/
+        // While loop On JS
+        let a=0;
+        while(a<4){
+            console.log(`${a} is less than 4`);
+            a++
+        }
+    </script>
+</body>
+</html>

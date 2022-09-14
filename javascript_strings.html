@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in Javascript | Strings Methods</title>
+</head>
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi pariatur id accusantium repellendus laborum architecto incidunt repudiandae exercitationem officiis animi harum doloribus ut explicabo ea eius, atque illum eveniet. Minus error veniam cumque ex?</p>
+        <script>
+            var string= "thi's"; // we can use both "" and '' in javasacript it will not affect the code 
+            var name= 'Tanay';
+            var message= "Tanay is a good boy";
+            var state= "delhi";
+            console.log(string+name+message);
+            var temp= `${name} is a 'good' boy and he is "from" ${state}`; // ${varname} is used for fill in the blanks like condition but make sure that it can be only used with `` not with the '' or "" and when we want to use ' ' and " " in the same sentence then we have to use ` ` only .This is another property of ` ` 
+            console.log(temp);
+            var len=name.length;
+            console.log(len);
+            console.log(`The length of name variable is ${len}`);
+            console.log('My name is Tanay Das\nI am 19 years old'); // \n is used for new line sane like c programming 
+            console.log('My name is Tanay Das\tI am 19 years old\b'); // \t is used for tab and /b is used for backspace
+            console.log('My name is Tanay Das \\nI am \n19 years old'); // if you want to use \n and shoe it in your string then you have to use \\n
+            // Method to inset text through Javascript
+            document.getElementById('content').innerHTML='<h3>This is an h3 heading inserted through javascript</h3>';
+        </script>
+    </div>
+</body>
+</html>"

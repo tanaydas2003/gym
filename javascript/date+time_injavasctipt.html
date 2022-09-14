@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date And Time In Javascript</title>
+    <style>
+        .container{
+            padding: 34px;
+            font-size: 23px;
+            background-color: blanchedalmond;
+            border: 2px solid grey;
+            margin: 4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Current Time is <span id="time"></span>
+    </div>
+    <script>
+        console.log('This is date and time tutorial');
+        let now= new Date();
+        console.log(now);
+        // Another Method of Initializing time
+        // let newdate=new Date(Year,Month,Date,Hours,minutes,seconds,milliseconds)
+        let newdate= new Date("2025-06-12");
+        console.log(newdate);
+        let newDate=newdate.getFullYear();
+        console.log('The Year is ',newDate);
+        let dat= newdate.getDay();
+        console.log('The date is ',dat);
+        let month=newdate.getMonth();
+        console.log('The month is ',month);
+        newdate.setDate(8);
+        newdate.setMinutes(35);
+        newdate.setHours(7);
+        console.log(newdate);
+        //Below method to show current time in website
+        function updateTime(){
+            time.innerHTML=new Date();// Here in time.innerhtml() time is id of span in which exact part of html we want to show the current time
+        }
+        setInterval(updateTime,1000);
+    </script>
+</body>
+</html>

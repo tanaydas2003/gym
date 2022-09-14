@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .card{
+            /*border: 2px solid red;*/
+            margin: 22px 12px;
+            padding: 23px 12px;
+            background-color: bisque;
+            /*box-shadow: 2px 4px green;*/
+            /*box-shadow: 2px 4px 6px 16px green;*/ /* 3rd size is used for blur radius  and 4th size is used for spread radius*/ 
+            /* box shadow is used for giving shadow out of the box */
+            box-shadow: inset 3px 4px green; /*inset us used for giving shadow inside the box */
+        }
+        .card h2{
+            text-shadow: 3px 4px 2px yellow;/* it is used for giving shadow to the text*/
+        }    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet unde enim dolor atque tempora iure omnis
+                sequi voluptates nemo illo perspiciatis suscipit iusto sunt alias temporibus praesentium, quasi quaerat
+                fugiat.\</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet unde enim dolor atque tempora iure omnis
+                sequi voluptates nemo illo perspiciatis suscipit iusto sunt alias temporibus praesentium, quasi quaerat
+                fugiat.\</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet unde enim dolor atque tempora iure omnis
+                sequi voluptates nemo illo perspiciatis suscipit iusto sunt alias temporibus praesentium, quasi quaerat
+                fugiat.\</p>
+        </div>
+    </div>
+</body>
+
+</html>

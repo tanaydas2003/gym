@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating The Dom</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact US</li>
+        </ul>
+    <div class="container">
+        Another Container
+    </div>   
+    </div>
+    <script>
+        let main=document.getElementById('main');
+        console.log(main);
+        let nav=document.getElementById('nav');
+        console.log(nav);
+        let containers=document.getElementsByClassName('container');
+        console.log(containers);
+        let sel=document.querySelector('.container');
+        console.log('Selectors Using css slectors' ,sel); // It is used for CSS selectors and it returns only first class not the second one conaining same selectors
+        let id=document.querySelector('#nav>li'); // It returns the first li
+        console.log(id);
+        let all=document.querySelectorAll('#nav>li')  // It will return all the same named id unlike it will return only first same matched .The only ediffernece is that here we use all and above did not use all  
+        console.log(all);
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope And Conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string='This is a string';
+        var string2='This is a string';
+        console.log(string);
+        // if we want to store different values to a same variable then we have to use let to declare a variable and after that we have to make brackets and again we can declare a same variable but that variable can store dofferet values but remain that same variable can store differnet value only inside the {} this bracket
+        let a='ui'; 
+        {
+             let a='i';
+            console.log(a);
+        }
+        console.log(a);
+        // we cant change the value of constant throughout the code constant have the same value same variable of costant does not hold same values
+        const b='This can not be changed';
+        console.log(b);
+        let age=2;
+        if(age>18){
+            console.log("You can drink wine and beer etc");
+        }
+        else if(age==2){
+            console.log('Your age is 2');
+        }
+        else{
+            conosle.log('You can drink cold drink');
+        }
+        let cups=4;
+        switch (cups) {
+            case 3:
+                console.log('The value of cups is 3');
+                break;
+            case 44:
+                console.log('The value of cups is 44');
+                break;
+            case 43:
+                console.log('The value of cups is 43');
+                break;
+            case 45:
+                console.log('The value of cups is 45');
+                break;
+            default:
+                console.log('The value of cups none of the 3,43,44 and 45');
+        }
+        // breaks is compulsory otherwise all cases will run considering the condition
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Functions In Javascript</title>
+</head>
+<body>
+    <script>
+        var str='This is a string';
+        console.log(str);
+        var position=str.indexOf('is'); // it gives first occurence of a substing
+        console.log(position);
+        // Last position of a substring
+        position=str.lastIndexOf('is'); // Make careful that string fumction of first word always begin with capital letter except the first word
+        console.log(position);
+        //Substring From A String
+        // Slice and substring both returns the substrings form a string but there is a slight difference between both of them
+        var substr=str.slice(1,6); // Slice function prints word from a string when parameters are given.Ot can takes both positive and negative values
+        console.log(substr);
+        substr=str.substring(1,6); // On the other hand substing can only takes positive values
+        var substr1=str.substr(1,3); // Substr also returns the substing form a string
+        console.log(substr1);
+
+        // Next is to replace a substring from a string given below
+        var replaced=str.replace('string','String in Javasacript'); // Here the previous string did not get update because we are storing that new replaced string in a new variable
+        console.log(str);
+        console.log(replaced);
+
+        // String Function to convert a normal string to only upper case or lower case
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        // We can also use to add a new substing at the end of the stringnotn only with the help of plus but also with the use of concatenate function
+        var newstring=str.concat('New String'); // If we want space between the old substrin and new added substring then we  to give a space at the starting of a string where we use the conacatenate function
+        console.log(newstring);
+        // Below function to remove white spaces between the string but only from a starting and ending not from in between the strings
+        // Trim
+        var whitespaces='   Hello My name is Tanay Das   ';
+        console.log(whitespaces);
+        console.log(whitespaces.trim());
+        // Below function to know the desired word at that location from a string
+        // charAt function
+        var char3=str.charAt(2);
+        console.log(str);
+        console.log(char3);
+        // Beloow function to know the character code present at that string
+        // charCodeAt funtion
+        var char3=str.charCodeAt(2);
+        console.log(char3);
+        // Another way to know the word present in the string
+        console.log(str[2]);
+    </script>
+</body>
+</html>
